@@ -7,7 +7,7 @@ SRC_DIR  := src
 OBJ_DIR  := obj
 
 # Explicitly list your source files (add all .cpp files here)
-SRCS     := $(SRC_DIR)/animal.cpp \
+SRCS     := $(SRC_DIR)/animal.cpp $(SRC_DIR)/wrongAnimal.cpp\
             $(SRC_DIR)/main.cpp
 
 # Generate object file paths (e.g., obj/Contact.o)

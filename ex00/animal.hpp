@@ -6,14 +6,16 @@
 /*   By: nikos <nikos@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2025/03/10 15:29:08 by nikos         #+#    #+#                 */
-/*   Updated: 2025/03/10 17:44:58 by nikos         ########   odam.nl         */
+/*   Updated: 2025/03/11 19:39:19 by nikos         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ANIMAL_HPP
 #define ANIMAL_HPP
 
+#include "wrongAnimal.hpp"
 #include <iostream>
+
 
 class Animal {
 	protected:
