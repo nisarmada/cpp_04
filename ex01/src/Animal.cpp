@@ -6,7 +6,7 @@
 /*   By: nikos <nikos@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2025/03/13 17:01:15 by nikos         #+#    #+#                 */
-/*   Updated: 2025/03/13 17:45:43 by nikos         ########   odam.nl         */
+/*   Updated: 2025/03/13 17:50:48 by nikos         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,6 @@ Animal& Animal::operator=(const Animal& other)
 	}
 	return (*this);
 }
-
-// void Animal::makeSound() const {
-// 	std::cout << "**Generic Animal sounds**" << std::endl;
-// }
-
 
 Dog::Dog() : Animal("Dog") {
 	std::cout << "Dog has been constructed !" << std::endl;
