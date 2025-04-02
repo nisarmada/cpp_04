@@ -6,7 +6,7 @@
 /*   By: nikos <nikos@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2025/03/11 19:39:21 by nikos         #+#    #+#                 */
-/*   Updated: 2025/03/11 20:10:17 by nikos         ########   odam.nl         */
+/*   Updated: 2025/04/02 11:29:11 by nsarmada      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,8 @@ class wrongAnimal {
 		~wrongAnimal();
 		wrongAnimal(const wrongAnimal &other);
 		wrongAnimal& operator=(const wrongAnimal &other);
-
+		
+		std::string getType() const;
 		void makeSound() const;
 };
 

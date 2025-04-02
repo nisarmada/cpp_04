@@ -6,7 +6,7 @@
 /*   By: nikos <nikos@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2025/03/10 15:41:13 by nikos         #+#    #+#                 */
-/*   Updated: 2025/03/11 20:21:07 by nikos         ########   odam.nl         */
+/*   Updated: 2025/04/02 11:30:21 by nsarmada      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,10 @@ Animal::~Animal() {
 
 Animal::Animal(const Animal& other) : type(other.type) {
 	std::cout << "Animal has been copied!" << std::endl;
+}
+
+std::string Animal::getType() const { 
+	return (type);
 }
 
 Animal& Animal::operator=(const Animal& other)

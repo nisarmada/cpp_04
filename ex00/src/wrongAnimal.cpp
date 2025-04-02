@@ -6,7 +6,7 @@
 /*   By: nikos <nikos@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2025/03/11 19:43:38 by nikos         #+#    #+#                 */
-/*   Updated: 2025/03/11 20:20:11 by nikos         ########   odam.nl         */
+/*   Updated: 2025/04/02 11:32:00 by nsarmada      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,10 @@ wrongAnimal& wrongAnimal::operator=(const wrongAnimal& other) {
 	return (*this);
 }
 
+std::string wrongAnimal::getType() const {
+	return (type);
+}
+
 void wrongAnimal::makeSound() const {
 	std::cout << "*wrong animal soundsss*" << std::endl;
 }
@@ -46,8 +50,8 @@ wrongCat::~wrongCat() {
 }
 
 wrongCat::wrongCat(const wrongCat &other) : wrongAnimal(other) {
-	std::cout << "wrong cat constructor" << std::endl;
-	this->type = "wrong cat";
+	std::cout << "wrong cat copy constructor" << std::endl;
+	// this->type = "wrong cat";
 }
 
 wrongCat& wrongCat::operator=(const wrongCat &other) {
